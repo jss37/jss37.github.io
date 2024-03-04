@@ -162,7 +162,7 @@
         <span style="float:left;"><u><b>NUMBER NECESSARY TO TREAT (NNT) Per Day to Prevent One ASCVD EVENT CALCULATOR</u></b></span>
 <br>
 <div style="border: 2px solid black; color:#424043; font-size: large;">
-        <span><h1><b>[Brook et al., Air Quality Index Guidance]</b><span style="margin-left:35vw;"><b>#</b></span><span style="margin-left:22vw;"><b>*Estimated Range</b></span></h1>
+        <span><h1><b>[Brook et al., Air Quality Index Guidance]</b><span style="margin-left:55vw;"><b>Estimated Range</b></span></h1>
     </div>
     </header>
         <table>
@@ -171,17 +171,17 @@
                     <div id="instructions">
                         <div class="instructionRow" style="background-color:#006766;color:white;height:85px;width:100%;padding-top:10px;">
                             <span class="instructionLabel" style="font-size: 1.5vw;"><u>STEP 1.</u> Enter 10-year ASCVD risk<sup>1</sup></span><br>
-                            <span class="instructionLabel" style="font-size: 1vw;color:gold"><em><span style="color:white;">(*</span>enter a #,  not a proportion; e.g., '10' correctly represents '10%', not '0.10' or '10%'<span style="color:white;">):</em></span></span>
+                            <span class="instructionLabel" style="font-size: 1vw;color:gold"><em><span style="color:white;">(</span>enter a #,  not a proportion; e.g., '10' correctly represents '10%', not '0.10' or '10%'<span style="color:white;">):</em></span></span>
                             <span id="patientsWithEventValue" class="inputNumberDisplay" style="color:#006766;">0</span>
                         </div>
                         <div class="instructionRow" style="background-color:#c6e0b3;height:85px;width:100%;padding-top:10px;">
                             <span class="instructionLabel"style="font-size: 1.5vw;" ><u>STEP 2.</u> Enter PM<sub>2.5</sub> concentration to convert to AQI<sup>2</sup></span><br>
-                            <span class="instructionLabel" style="font-size: 1vw;"><em>(*enter a # to convert to Air Quality Index; e.g., '117' ):</em></span>
+                            <span class="instructionLabel" style="font-size: 1vw;"><em>(enter a # to convert to Air Quality Index; e.g., '117' ):</em></span>
                             <span id="totalPatientsTreatmentValue" class="inputNumberDisplay" style="color:#c6e0b3;">13</span>
                         </div>
                         <div class="instructionRow" style="background-color: #e1efdb ;height:85px;width:100%;padding-top:10px;">
                             <span class="instructionLabel" style="font-size: 1.5vw;"><u>STEP 3.</u> Effectiveness of intervention to reduce exposure<sup>3</sup></span><br>
-                            <span class="instructionLabel" style="font-size: 1vw;"><em>(*enter a #,  not a proportion; e.g., '35' correctly represents '35%', not '0.35' or '35%'):</em></span>
+                            <span class="instructionLabel" style="font-size: 1vw;"><em>(enter a #,  not a proportion; e.g., '35' correctly represents '35%', not '0.35' or '35%'):</em></span>
                             <span id="eventRateControlValue" class="inputNumberDisplay" style="color: #e1efdb;margin-top:50px">15</span>
                         </div>
                         <div class="instructionRow" style="height:5vh;width:100%">
@@ -206,7 +206,7 @@
                 <td style="background-color:lightgrey;width:40%">
                     <div id="calculator">
                         <div class="sliderContainer" style="background-color:#006766;color:white;height:95px;padding-top: 35px; ">
-                            <label class="sliderLabel" for="patientsWithEvent" >
+                            <label class="sliderLabel" for="patientsWithEvent" title = "Use Arrow Keys For Precise Selection";>
                                 <span>1</span>
                                 <input type="range" id="patientsWithEvent" class="slider" min="1" max="20" step="1" oninput="calculateNNT()">
                                 <span>20%</span>
@@ -214,7 +214,7 @@
                         </div>
 
                         <div class="sliderContainer" style="background-color:#c6e0b3;height:95px;padding-top: 35px; padding-right:30px">
-                            <label class="sliderLabel" for="totalPatientsTreatment" style="color:black;">
+                            <label class="sliderLabel" for="totalPatientsTreatment" style="color:black;" title = "Use Arrow Keys For Precise Selection">
                                 <span>13</span>
                                 <input type="range" id="totalPatientsTreatment" class="slider" min="13" max="500" step="1" oninput="calculateNNT()" style="background-color: black;">
                                 <span>500<span style="font-size:1vw;">µ/mg<sup>3</sup></span> </span>
@@ -222,7 +222,7 @@
                         </div>
 
                         <div class="sliderContainer" style="background-color: #e1efdb ;height:95px ;padding-top: 35px; ">
-                            <label class="sliderLabel" for="eventRateControl" style="color:black; ">
+                            <label class="sliderLabel" for="eventRateControl" style="color:black; " title = "Use Arrow Keys For Precise Selection">
                                 <span>15</span>
                                 <input type="range" id="eventRateControl" class="slider" min="15" max="50" step="1" oninput="calculateNNT()" style="background-color: black; ">
                                 <span>50%</span>
